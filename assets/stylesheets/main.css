@@ -162,3 +162,50 @@ h4 {
     padding: 10px;
     margin-left: -25px;
 }
+
+/* Contact form */
+
+.contact {
+    margin-left: 30px;
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+.contact input, textarea {
+    border-top: 5px solid #648880;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: none;
+    border-left: none;
+    color: #293f50;
+    margin: 5px 0 28px 0;
+    padding: 5px 10px;
+    font-family: 'Itim', cursive, Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+/* Guides */
+
+.guides {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 200px;
+}
+
+.guides h2 {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.guides img {
+    max-width: 100%;
+}
+
+/* Image Map */
+
+img.map, map area{
+    outline: none;
+}
