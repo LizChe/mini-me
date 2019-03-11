@@ -183,3 +183,29 @@ h4 {
     font-family: 'Itim', cursive, Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
 }
+
+/* Guides */
+
+.guides {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 200px;
+}
+
+.guides h2 {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.guides img {
+    max-width: 100%;
+}
+
+/* Image Map */
+
+img.map, map area{
+    outline: none;
+}
