@@ -170,7 +170,7 @@ h4 {
 /* Contact form */
 
 .contact {
-    margin-left: 30px;
+    margin-left: 50px;
     padding-top: 40px;
     font-size: 20px;
 }
@@ -182,11 +182,21 @@ h4 {
     border-right: none;
     border-left: none;
     color: #293f50;
-    margin: 5px 0 28px 0;
+    margin: 5px 0 30px 0;
     padding: 5px 10px;
     font-family: 'Itim', cursive, Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     width: 300px;
+}
+
+.content-contact {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#octocat {
+    margin: 50px;
 }
 
 /* Guides */
