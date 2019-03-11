@@ -148,6 +148,10 @@ h4 {
     text-align: center;
     margin-right: 30px;
     margin-left: 20px;
+    border-radius: 5px;
+    border-left: 6px double #648880;
+    border-top: 6px double #648880;
+    padding: 10px;
 }
 
 .description ul {
