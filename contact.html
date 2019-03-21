@@ -3,82 +3,91 @@
 
 <head>
 
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Mini Liz</title>
-    <meta name="description" content="Very first website of Liz">
+    <meta name="description" content="Very first website of Liz"/>
     <meta name="keywords" content="Liz">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/stylesheets/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="assets/stylesheets/main.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico"/>
 
 </head>
 
 <body>
 
-    <header class="main_header">
+<header class="main_header">
 
-        <h1 class="main_logo">
-            <a href="index.html">Liz</a>
-        </h1>
+    <h1 class="main_logo">
+        <a href="index.html">Liz</a>
+    </h1>
 
-        <nav class="navigation_menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="guides.html">Guides</a></li>
-            </ul>
-        </nav>
+    <nav class="navigation_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="guides.html">Guides</a></li>
+        </ul>
+    </nav>
 
-    </header>
+</header>
 
-    <div class="content-contact">
+<div class="content-contact">
 
-        <a href="https://github.com/LizChe" target="_blank">
-            <img src="assets/images/contact/octocat.png" id="octocat" alt="Octocat Liz">
-        </a>
+    <a href="https://github.com/LizChe" target="_blank">
+        <img src="assets/images/contact/octocat.png" id="octocat" alt="Octocat Liz"/>
+    </a>
 
-        <form class="contact" action="#" method="POST">
-            <fieldset>
-                <br>
+    <form class="contact" name="form" method="POST" onsubmit="return validateFields()">
+        <fieldset>
 
-                <label for="name">Name:</label>
-                <br>
-                <input type="text" name="name" id="name" placeholder="Enter your name">
+            <br>
+            <label for="name"
+                   title="Name should start with capital letter and be no longer than 25 characters">Name:</label>
+            <br>
+            <input type="text" name="name" id="name" placeholder="Enter your name" onkeyup="validateForm()"/>
+            <span id="invalid-name-message"></span>
 
-                <br><br>
+            <br><br>
 
-                <label for="e-mail">E-mail:</label>
-                <br>
-                <input type="email" name="email" id="e-mail" placeholder="Give your e-mail">
+            <label for="e-mail" title="example-of_valid@email.com">E-mail:</label>
+            <br>
+            <input type="email" name="email" id="e-mail" placeholder="Give your e-mail" onkeyup="validateForm()"/>
+            <span id="invalid-email-message"></span>
 
-                <br><br>
 
-                <label for="message">Your message:</label>
-                <br>
-                <textarea name="message" id="message" rows="10" cols="30" placeholder="How can I help you?"></textarea>
+            <br><br>
 
-                <br>
+            <label for="message">Your message:</label>
+            <br>
+            <textarea name="message" id="message" rows="10" cols="30" placeholder="How can I help you?"
+                      onkeyup="validateForm()"></textarea>
 
-                <input type="submit" value="Send" disabled="disabled">
+            <br>
 
-            </fieldset>
-        </form>
-    
-    </div>
+            <input type="submit" value="Send" id="submit-button" disabled="disabled"/>
 
-    <footer class="main_footer">
+        </fieldset>
+    </form>
 
-        <small>&copy; Mini Liz</small>
+</div>
 
-        <nav class="navigation_menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="guides.html">Guides</a></li>
-            </ul>
-        </nav>
+<footer class="main_footer">
 
-    </footer>
+    <small>&copy; Mini Liz</small>
+
+    <nav class="navigation_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="guides.html">Guides</a></li>
+        </ul>
+    </nav>
+
+</footer>
+
+<script src="assets/scripts/main.js"></script>
 
 </body>
+
+</html>
