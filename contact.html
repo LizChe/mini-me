@@ -38,19 +38,23 @@
         <img src="assets/images/contact/octocat.png" id="octocat" alt="Octocat Liz"/>
     </a>
 
-    <form class="contact" name="form" action="index.html" method="POST">
+    <form class="contact" name="form" method="POST" onsubmit="return validateFields()">
         <fieldset>
 
             <br>
-            <label for="name">Name:</label>
+            <label for="name"
+                   title="Name should start with capital letter and be no longer than 25 characters">Name:</label>
             <br>
             <input type="text" name="name" id="name" placeholder="Enter your name" onkeyup="validateForm()"/>
+            <span id="invalid-name-message"></span>
 
             <br><br>
 
-            <label for="e-mail">E-mail:</label>
+            <label for="e-mail" title="example-of_valid@email.com">E-mail:</label>
             <br>
             <input type="email" name="email" id="e-mail" placeholder="Give your e-mail" onkeyup="validateForm()"/>
+            <span id="invalid-email-message"></span>
+
 
             <br><br>
 
@@ -61,7 +65,7 @@
 
             <br>
 
-            <input type="submit" value="Send" id="submit-button" disabled="disabled" onclick="displayThanks()"/>
+            <input type="submit" value="Send" id="submit-button" disabled="disabled"/>
 
         </fieldset>
     </form>
