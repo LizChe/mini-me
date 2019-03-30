@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
     box-sizing: border-box;
@@ -98,12 +97,17 @@ p {
     margin-right: 30px;
 }
 
+h1 {
+    color: #ffff;
+    font-size: 24px;
+}
+
 h2 {
     color: #ffae00;
     font-size: 20px;
 }
 
-h4 {
+h3, h4 {
     text-transform: uppercase;
     color: #dfb0b0d0;
 }
@@ -164,6 +168,13 @@ h4 {
     font-size: 20px;
 }
 
+.contact .info-sign {
+    vertical-align: super;
+    font-size: 14px;
+    cursor: help;
+    color: #ffae00;
+}
+
 .contact input, textarea {
     border-top: 5px solid #648880;
     border-top-right-radius: 10px;
@@ -176,11 +187,21 @@ h4 {
     font-family: 'Itim', cursive, Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     width: 350px;
+    outline: none;
 }
 
 .contact input[type=submit]:enabled {
     border-top: 5px solid #ffae00;
+    background-color: #293f50;
+    color: #ddbfbf;
     transition: all 0.2s linear 0s;
+    box-shadow:
+            0 2px 5px rgba(0, 0, 0, 0.5),
+            0 1px 0 rgba(255, 255, 255, 0.25) inset,
+            0 0 0 rgba(0, 0, 0, 0.25) inset,
+            0 20px 0 rgba(255, 255, 255, 0.03) inset,
+            0 -20px 20px rgba(0, 0, 0, 0.15) inset,
+            0 20px 20px rgba(255, 255, 255, 0.05) inset;
 }
 
 .contact input[type=submit]:hover:enabled {
