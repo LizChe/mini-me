@@ -95,6 +95,10 @@ a {
 p {
     text-align: justify;
     margin-right: 30px;
+    font-family: 'Rokkitt', serif;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.4;
 }
 
 h1 {
@@ -104,12 +108,13 @@ h1 {
 
 h2 {
     color: #ffae00;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 h3, h4 {
     text-transform: uppercase;
     color: #dfb0b0d0;
+    font-size: 20px;
 }
 
 /* Footer */
@@ -145,12 +150,25 @@ h3, h4 {
     border-left: 6px double #648880;
     border-top: 6px double #648880;
     padding: 10px;
+    background-color: rgba(221, 191, 191, 0.1);
 }
 
 .description ul {
     list-style-type: none;
     text-align: left;
     margin-left: 30px;
+}
+
+.description li {
+    font-family: 'Rokkitt', serif;
+    font-size: 17px;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+.description p {
+    font-weight: bolder;
+    font-size: 19px;
 }
 
 .description li::before {
