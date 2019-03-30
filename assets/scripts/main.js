@@ -1,6 +1,6 @@
 "use strict";
 
-window.onload = function() {
+window.onload = function () {
     validateForm();
     changeNameFieldStyleToValid();
     changeEmailFieldStyleToValid();
@@ -46,7 +46,7 @@ function displayThanks() {
 
 function validateName() {
     let name = document.forms["form"]["name"].value;
-    let validName = /[A-Z]\s?[A-Z]?\w*/;
+    let validName = /^[A-Z]{1}[a-z]+\s{1}([A-Z]{1}[a-z]+|[A-Za-z]\'{1}[A-Z]{1}[a-z]+|[A-Z]{1}[a-z]+\-{1}[A-Z]{1}[a-z]\.{1})/;
 
     if (name == /\s+/ || !validName.test(name) || name.length > 25) {
         changeNameFieldStyleToInvalid();
@@ -69,6 +69,8 @@ function validateEmail() {
 }
 
 function validateFields() {
+    validateEmail();
+    validateName();
     if (validateName() && validateEmail()) {
         displayThanks();
         return true;
