@@ -4,13 +4,17 @@
 <head>
 
     <meta charset="UTF-8"/>
-    <title>Mini Liz</title>
     <meta name="description" content="Very first website of Liz"/>
     <meta name="keywords" content="Liz">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Mini Liz</title>
+
     <link rel="stylesheet" href="assets/stylesheets/main.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico"/>
+
+    <script src="assets/scripts/main.js" async></script>
 
 </head>
 
@@ -42,19 +46,19 @@
         <fieldset>
 
             <br>
-            <label for="name"
-                   title="Name should start with capital letter and be no longer than 25 characters">Name:</label>
+            <span class="info-sign" title="Name should start with capital letter and be no longer than 25 characters">&#9432 </span>
+            <label for="name">Name:</label>
             <br>
             <input type="text" name="name" id="name" placeholder="Enter your name" onkeyup="validateForm()"/>
-            <span id="invalid-name-message"></span>
+            <span id="invalid-name-message">* Invalid Name</span>
 
             <br><br>
 
-            <label for="e-mail" title="example-of_valid@email.com">E-mail:</label>
+            <span class="info-sign" title="example-of_valid@email.com">&#9432 </span>
+            <label for="e-mail">E-mail:</label>
             <br>
             <input type="email" name="email" id="e-mail" placeholder="Give your e-mail" onkeyup="validateForm()"/>
-            <span id="invalid-email-message"></span>
-
+            <span id="invalid-email-message">* Invalid E-mail</span>
 
             <br><br>
 
@@ -85,8 +89,6 @@
     </nav>
 
 </footer>
-
-<script src="assets/scripts/main.js"></script>
 
 </body>
 
